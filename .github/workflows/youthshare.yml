@@ -21,4 +21,4 @@ jobs:
           
       - name: '运行 【youthshare】'
         run: |
-          node youthshare.js
+          node ./youthshare.js
