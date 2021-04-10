@@ -3,10 +3,10 @@ const $ = new Env('youthshare');
 let md5 = require('md5-node');
 let nowTime;
 let wxck;
-let articles = ["https://focus.youth.cn/article/s?signature=qbBkjWwN2L3nP684eJOGrAfdQWJ2cBxkZgm7gRyAEYpXDmeo0O&uid=52008122&phone_code=c101ffb3769838d579eae1fc6c001b59&scid=36516756&time=1614523802&app_version=2.0.2&sign=b11725fb6b9d102245d99440b2e2a436",
-"https://focus.youth.cn/article/s?signature=VOZvBzYN5rkDxgX7YwgP8Yi8zvGLiVdY30Y1L3yAP6WMnmlGK9&uid=52008122&phone_code=c101ffb3769838d579eae1fc6c001b59&scid=36512046&time=1614523849&app_version=2.0.2&sign=8c8796e8a79a9508163aa00a8d7aca4a",
-"https://focus.youth.cn/article/s?signature=89NvAVZQolPrzM0a3VrpJ6C6Ydg3HLZX56K7gXDkJEqdw5xObL&uid=52008122&phone_code=c101ffb3769838d579eae1fc6c001b59&scid=36518375&time=1614523866&app_version=2.0.2&sign=04547e9725c478378375fa0db034b89c",
-"https://focus.youth.cn/article/s?signature=DX6wEBvPbxy02WLarv3oRpCRPoZWTNpMJxzagRQY9OZjA5eJpl&uid=52008122&phone_code=c101ffb3769838d579eae1fc6c001b59&scid=36515415&time=1614523882&app_version=2.0.2&sign=9b56a9570fa6ff5798565fa60c7a4800"]
+let articles = ["https://focus.youth.cn/article/s?signature=Vwo03AWDZyGJbgP7NEm0QVFqNp05SvJLOOV4nMY6dljLxe9Opk&uid=46309274&phone_code=8ccfa0578f0b995d531eb9b68d5cd7e6&scid=37345311&time=1618032441&app_version=2.0.2&sign=0e6710076a465a5534b1da791a0c47ca",
+"https://focus.youth.cn/article/s?signature=P5zR0VlwdZoWp3N4KmAGyqtBKPp5FZ8PxVGaMQLb6BeXxq2kEr&uid=46309274&phone_code=8ccfa0578f0b995d531eb9b68d5cd7e6&scid=37402942&time=1618032525&app_version=2.0.2&sign=40cdf5a1585d953cf1d843f2aaf5ecaf",
+"https://focus.youth.cn/article/s?signature=Vwo03AWDZyGJbgP7NEmOAkHqNp05SvJLO6m4nMY6dljLxe9Opk&uid=46309274&phone_code=8ccfa0578f0b995d531eb9b68d5cd7e6&scid=37385799&time=1618032545&app_version=2.0.2&sign=f06e3b22045c1ba221058c040bd49e9e",
+"https://focus.youth.cn/article/s?signature=BzyAgkjdGMQWRVY75D63zKHeXjYgfvZo5EE4lK9opXE8ZO3mrb&uid=46309274&phone_code=8ccfa0578f0b995d531eb9b68d5cd7e6&scid=37384754&time=1618033433&app_version=2.0.2&sign=bfa4f5dc94ea9cba4ce1e27e40772442"]
 
 let encodearticles;
 
