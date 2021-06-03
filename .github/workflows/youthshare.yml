@@ -3,7 +3,7 @@ name: 中青助力分享阅读
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0,30 */1 * * *'
+    - cron: '*/20 15-23 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest       
