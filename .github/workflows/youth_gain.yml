@@ -43,21 +43,21 @@ jobs:
       - name: '运行 【中青浏览赚二】'
         if: env.YOUTH_START2
         run: |
-          node Script/youth_gain.js
+          node youth_gain.js
       - name: '运行 【中青浏览赚三】'
         if: env.YOUTH_START3
         run: |
-          node Script/youth_gain.js
+          node youth_gain.js
       - name: '运行 【中青浏览赚四】'
         if: env.YOUTH_START4
         run: |
-          node Script/youth_gain.js
+          node youth_gain.js
       - name: '运行 【中青浏览赚五】'
         if: env.YOUTH_START5
         run: |
-          node Script/youth_gain.js
+          node youth_gain.js
       - name: '运行 【中青浏览赚六】'
         if: env.YOUTH_START6
         run: |
-          node Script/youth_gain.js
+          node youth_gain.js
 
