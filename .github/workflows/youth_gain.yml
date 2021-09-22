@@ -39,7 +39,7 @@ jobs:
       - name: '运行 【中青浏览赚一】'
         if: env.YOUTH_START1
         run: |
-          node Script/youth_gain.js
+          node youth_gain.js
       - name: '运行 【中青浏览赚二】'
         if: env.YOUTH_START2
         run: |
