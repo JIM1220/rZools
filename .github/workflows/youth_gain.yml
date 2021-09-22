@@ -28,11 +28,11 @@ jobs:
         if: env.YOUTH_START
         run: |
           npm install
-      - name: '运行 【中青浏览赚一】'
+      - name: '运行 【中青浏览赚】'
         if: env.YOUTH_START1
         run: |
           node Script/youth_gain.js
-      - name: '运行 【中青浏览赚二】'
+      - name: '运行 【中青浏览赚】'
         if: env.YOUTH_START2
         run: |
           node Script/youth_gain.js
