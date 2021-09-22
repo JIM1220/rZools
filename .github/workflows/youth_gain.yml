@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: 12.x
       - name: npm install
-        if: env.YOUTH_START
+        if: env.YOUTH_START1
         run: |
           npm install
       - name: '运行 【中青浏览赚一】'
