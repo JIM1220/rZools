@@ -18,6 +18,12 @@ jobs:
       YOUTH_LOOK1: ${{ secrets.YOUTH_LOOK1 }}
       YOUTH_START2: ${{ secrets.YOUTH_START2 }}
       YOUTH_LOOK2: ${{ secrets.YOUTH_LOOK2 }}
+      YOUTH_START3: ${{ secrets.YOUTH_START3 }}
+      YOUTH_LOOK3: ${{ secrets.YOUTH_LOOK3 }}
+      YOUTH_START4: ${{ secrets.YOUTH_START4 }}
+      YOUTH_LOOK4: ${{ secrets.YOUTH_LOOK4 }}
+      YOUTH_START5: ${{ secrets.YOUTH_START5 }}
+      YOUTH_LOOK5: ${{ secrets.YOUTH_LOOK5 }}
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
@@ -43,5 +49,26 @@ jobs:
         env:
           YOUTH_START: ${{ secrets.YOUTH_START2 }}
           YOUTH_LOOK: ${{ secrets.YOUTH_LOOK2 }}
+       - name: '运行 【账号三中青浏览赚】'
+        if: env.YOUTH_START3
+        run: |
+          node youth_gain.js
+        env:
+          YOUTH_START: ${{ secrets.YOUTH_START3 }}
+          YOUTH_LOOK: ${{ secrets.YOUTH_LOOK3 }}
+       - name: '运行 【账号四中青浏览赚】'
+        if: env.YOUTH_START4
+        run: |
+          node youth_gain.js
+        env:
+          YOUTH_START: ${{ secrets.YOUTH_START4 }}
+          YOUTH_LOOK: ${{ secrets.YOUTH_LOOK4 }}
+       - name: '运行 【账号五中青浏览赚】'
+        if: env.YOUTH_START5
+        run: |
+          node youth_gain.js
+        env:
+          YOUTH_START: ${{ secrets.YOUTH_START5 }}
+          YOUTH_LOOK: ${{ secrets.YOUTH_LOOK5 }}
 
    
