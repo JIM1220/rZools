@@ -1,0 +1,32 @@
+name: 中青浏览赚
+
+on:
+  workflow_dispatch:
+  schedule:
+     - cron: '7 7 * * *'
+  watch:
+    types: started
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    env:
+        YOUTH_START: ${{ secrets.YOUTH_START }}
+        YOUTH_LOOK: ${{ secrets.YOUTH_LOOK }}
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: npm install
+        if: env.YOUTH_START
+        run: |
+          npm install
+      - name: '运行 【中青浏览赚】'
+        if: env.YOUTH_START
+        run: |
+          node Script/youth_gain.js
