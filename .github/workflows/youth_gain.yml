@@ -8,7 +8,7 @@ on:
   schedule:
      - cron: '08 1,6,22 * * *'
   watch:
-    types: youth_gain
+    types: started
 jobs:
   build:
     runs-on: ubuntu-latest
