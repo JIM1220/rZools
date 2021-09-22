@@ -25,7 +25,8 @@ jobs:
       YOUTH_START5: ${{ secrets.YOUTH_START5 }}
       YOUTH_LOOK5: ${{ secrets.YOUTH_LOOK5 }}
     steps:
-      - uses: actions/checkout@v1
+      -name: Checkout
+        uses: actions/checkout@v1
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
